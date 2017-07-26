@@ -1,5 +1,7 @@
 # Project Name: wego
-# Welcome join: Go/golang/学习交流二群634281386学习交流项目
+# Project target: Web Online Instant Messaging
+# Welcome to join us: Go/golang/学习交流QQ二群
+# QQ Group Number: 634281386
 
 # 版本号指定
 # 1.采用三位版本号 Version: 0.0.0

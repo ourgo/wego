@@ -11,7 +11,7 @@ func Router(w http.ResponseWriter,r *http.Request) {
 	w.Write([]byte("hello wego"))
 	// 定义map数据(模拟查询)
 	m := make(map[string]string)
-	m["username"]="xiaolia"
+	m["username"]="xiaoli"
 	// 查询并得到返回数据
 	mm,_ := user.FindOne(m)
 	// 输出返回数据

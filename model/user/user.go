@@ -10,15 +10,24 @@ type User struct {
 	Password string
 }
 
+
+
 func FindOne(m map[string]string) (bson.M,map[string]string) {
+
+	dialInfo := &mgo.DialInfo{
+		Addrs:[]string{"127.0.0.1:27027"},
+		Database:"test",
+	}
+
 	// 连接数据库
-	Client,_ := mgo.Dial("localhost")
+	//Client,_ := mgo.Dial("mongodb://ourgo:wego@23.95.11.47:27027/ourgo")
+	Client,_ := mgo.DialWithInfo(dialInfo)
 	// 关闭数据库
 	defer Client.Close()
 	// 设置连接模式
-	Client.SetMode(mgo.Monotonic,true)
+	//Client.SetMode(mgo.Monotonic,true)
 	// 切换连接的数据库DB()和集合C()
-	users := Client.DB("test").C("users")
+	users := Client.DB("ourgo").C("users")
 	// 定义接收
 	result := &User{}
 	// 查找数据
@@ -39,7 +48,6 @@ func FindOne(m map[string]string) (bson.M,map[string]string) {
 	// 返回数据
 	return mm,nil
 }
-
 
 func user() {
 	mm := make(map[string]string)

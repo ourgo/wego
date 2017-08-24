@@ -5,7 +5,7 @@
 ## QQ Group Number: 634281386
 ***
 ### wego UI(未完成，仅供参考)
-#![image](https://github.com/ourgo/wego/blob/master/image/WegoUI.png)
+![image](https://github.com/ourgo/wego/blob/master/image/WegoUI.png)
 ***
 ## 版本号指定
 ### 1.采用三位版本号 Version: 0.0.0

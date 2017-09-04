@@ -6,7 +6,7 @@ import (
 )
 
 // 加密密码
-func ToHash(s string,k string) string {
+func ToHash(s,k string) string {
 	hanher := sha256.New()
 	// 写入字符串
 	hanher.Write([]byte(s))

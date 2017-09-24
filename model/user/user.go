@@ -1,14 +1,14 @@
 package user
-//
-//import (
-//	"gopkg.in/mgo.v2/bson"
-//	"gopkg.in/mgo.v2"
-//)
 
 import (
-	"labix.org/v2/mgo"
-	"labix.org/v2/mgo/bson"
+	"gopkg.in/mgo.v2/bson"
+	"gopkg.in/mgo.v2"
 )
+
+//import (
+//	"labix.org/v2/mgo"
+//	"labix.org/v2/mgo/bson"
+//)
 
 type User struct {
 	Username string
